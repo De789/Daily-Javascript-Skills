@@ -1,11 +1,12 @@
 
-function vehicle(make,year){
-    this.make=make,
-    this.year=year
-    vehicle.prototype.display=function(){
-        console.log(`This ${this.make} year is ${this.year}`)
+function Class(name,dept){
+    this.name=name;
+    this.dept=dept;
+
+    Class.prototype.disply=function(){
+        console.log(`This is ${this.name} and My department is ,${this.dept}`)
     }
 }
 
-const data=new vehicle("Honda",2000)
-data.display()
+x=new Class("Mahesh","Mechanical")
+x.disply()
